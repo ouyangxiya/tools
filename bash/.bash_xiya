@@ -1,0 +1,14 @@
+#!/bin/bash
+# Using `source .bash_xiya`
+
+
+
+# ------------- GIT Convinient Command --------------------
+
+# Delete git branches
+# Example gitdb feature/*
+#         gitdb bugfix/*
+gitdb(){
+	git branch | grep $1 | xargs git branch -D
+}
+ 
