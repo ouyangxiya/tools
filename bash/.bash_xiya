@@ -11,4 +11,5 @@
 gitdb(){
 	git branch | grep $1 | xargs git branch -D
 }
- 
+
+alias gitp="git pull --autostash --rebase --recurse-submodules"
